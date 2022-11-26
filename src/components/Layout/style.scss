@@ -1,0 +1,54 @@
+@import "colors";
+@import "devices";
+
+.wrapper {
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  height: 100%;
+
+  @media #{$desktop} {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.media {
+  flex-grow: 1;
+  height: 100vh;
+
+  @media #{$desktop} {
+    flex-grow: initial;
+    height: 545px;
+  }
+}
+
+.content {
+  flex-basis: 545px;
+  height: 100%;
+  overflow-y: auto;
+  padding: {
+    top: 50px;
+  }
+  position: relative;
+  width: 545px;
+
+  @media #{$desktop} {
+    flex-basis: auto;
+    margin-top: -125px;
+    max-width: 545px;
+    padding: {
+      top: 20px;
+    }
+    width: 100%;
+  }
+}
+
+.page {
+  display: flex;
+
+  @media #{$desktop} {
+    flex-direction: column;
+  }
+}

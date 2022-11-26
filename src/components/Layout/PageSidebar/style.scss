@@ -1,0 +1,24 @@
+@import "colors";
+@import "devices";
+
+.page {
+
+	&__sidebar {
+    width: 375px;
+    flex: 0 1 375px;
+    background-color: $grayBg;
+
+    @media #{$desktop} {
+      width: 100%;
+      flex: none;
+      background-color: transparent;
+    }
+
+    &__button {
+      margin: 15px 0 25px 20px;
+      width: 10px;
+      height: 18px;
+      cursor: pointer;
+    }
+  }
+}

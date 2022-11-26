@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(248, 248, 248, 0.9);
+  color: black;
+  font: {
+    family: "Inter", sans-serif;
+    size: 14px;
+    weight: $normal;
+  }
+  line-height: 1;
+}
+
+#root {
+  height: 100vh;
+  overflow: hidden;
+
+  @media #{$desktop} {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+h2 {
+  font: {
+    size: 18px;
+    weight: $bold;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}

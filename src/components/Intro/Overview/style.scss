@@ -1,0 +1,37 @@
+@import "colors";
+@import "fonts";
+
+.intro {
+  &__overview {
+    margin-bottom: 15px;
+
+    &__title {
+      font: {
+        size: 18px;
+        weight: $bold;
+      }
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      line-height: 20px;
+    }
+
+    &__expand {
+      color: $grayDarker;
+      cursor: pointer;
+      display: inline;
+      font: {
+        weight: $semiBold;
+      }
+
+      &--active {
+        display: block;
+      }
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}

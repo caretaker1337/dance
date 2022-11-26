@@ -1,0 +1,70 @@
+@import "colors";
+@import "devices";
+@import "fonts";
+
+.intro {
+  margin-bottom: 30px;
+  padding-inline: 22px;
+
+  @media #{$desktop} {
+    padding-inline: 16px;
+  }
+
+  &__price {
+    color: $gray;
+    font: {
+      size: 14px;
+      weight: $medium;
+    }
+    margin-bottom: 10px;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    &__title {
+      font: {
+        size: 28px;
+        weight: $bold;
+      }
+      margin-bottom: 25px;
+
+      @media #{$desktop} {
+        color: white;
+        line-height: 34px;
+        max-width: 265px;
+      }
+    }
+
+    &__button {
+      backdrop-filter: blur(13px);
+      background-color: black;
+      border-radius: 12px;
+      color: white;
+      font: {
+        size: 15px;
+        weight: $semiBold;
+      }
+      height: 28px;
+      height: 38px;
+      line-height: 28px;
+      padding-inline: 15px;
+      text-align: center;
+      transition: background-color 0.1s ease-in, color 0.2s ease-in;
+
+      &:hover {
+        background-color: #F1F1F1;
+        color: black;
+        cursor: pointer;
+        border: none;
+      }
+
+      @media #{$desktop} {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

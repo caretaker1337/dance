@@ -1,0 +1,55 @@
+@import "devices";
+
+.video {
+  height: 100%;
+  position: relative;
+
+  &::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, black 100%);
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  &__element {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    height: 100px;
+    width: 100px;
+    background: rgba(179, 179, 179, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media #{$desktop} {
+      top: 40%;
+    }
+  }
+
+  &__button__svg {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 35px;
+    display: block;
+  }
+
+}

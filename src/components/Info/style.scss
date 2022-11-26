@@ -1,0 +1,30 @@
+@import "colors";
+@import "devices";
+
+.info {
+  padding-inline: 22px;
+  
+  @media #{$desktop} {
+    padding-inline: 16px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__label {
+    color: $gray;
+  }
+}

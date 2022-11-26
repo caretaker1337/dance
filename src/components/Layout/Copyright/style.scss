@@ -1,0 +1,29 @@
+@import "colors";
+
+.copyright {
+  background-color: $grayBg;
+  padding-block: 30px;
+  text-align: center;
+
+  &__link {
+    color: $grayDarkest;
+    text-decoration: none;
+    transition: opacity 0.1s ease-in;
+    font-size: 12px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__icon {
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    width: 26px;
+  }
+
+  &__image {
+    vertical-align: middle;
+  }
+}

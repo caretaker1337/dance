@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "uuid": "^9.0.0"
+  },
+  "description": "Course A",
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.15.13",
+    "esbuild-plugin-clean": "^0.9.0",
+    "esbuild-plugin-copy": "^1.6.0",
+    "esbuild-plugin-eslint": "^0.1.1",
+    "esbuild-plugin-ts-checker": "^1.0.2",
+    "esbuild-sass-plugin": "^2.4.1",
+    "esbuild-server": "^0.1.2",
+    "eslint": "^8.27.0",
+    "swiper": "^8.4.4",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.4"
+  },
+  "license": "UNLICENSED",
+  "name": "course",
+  "scripts": {
+    "build": "cross-env MODE=production ts-node ./esbuild-config.ts",
+    "develop": "cross-env MODE=development ts-node ./esbuild-config.ts"
+  },
+  "version": "1.0"
+}

@@ -1,8 +1,6 @@
 import React from "react";
 
 import { Info, Intro, Learning, Products, Video } from "~/components";
-// import { PageSidebar } from "./PageSidebar";
-// import { PageContent } from "./PageContent";
 import "./style.scss";
 import { Copyright } from "./Copyright";
 
@@ -49,11 +47,6 @@ const Layout: React.FC = () => (
         <Copyright />
       </div>
     </div>
-
-    {/* <div className="page">
-      <PageSidebar />
-      <PageContent />
-    </div> */}
   </>
 );
 

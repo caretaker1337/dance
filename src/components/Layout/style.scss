@@ -6,7 +6,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0 0 25px 25px;
   display: flex;
-  height: 100%;
+  height: calc(100% - 50px);
 
   @media #{$desktop} {
     align-items: center;
@@ -47,8 +47,24 @@
 
 .page {
   display: flex;
+  height: calc(100% - 50px);
 
   @media #{$desktop} {
     flex-direction: column;
+  }
+}
+
+.menu {
+  height: 50px;
+
+  &__list {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 20px;
   }
 }

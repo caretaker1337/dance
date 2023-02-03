@@ -2,8 +2,7 @@
 @import "devices";
 
 .page {
-
-	&__sidebar {
+  &__sidebar {
     width: 375px;
     flex: 0 1 375px;
     background-color: $grayBg;
@@ -15,6 +14,8 @@
     }
 
     &__button {
+      color: black;
+      display: block;
       margin: 15px 0 25px 20px;
       width: 10px;
       height: 18px;

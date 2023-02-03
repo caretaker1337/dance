@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import { Products } from "~/components";
 import { SvgArrowIcon2 } from "~/icons";
@@ -6,9 +7,9 @@ import "./style.scss";
 
 const PageSidebar: React.FC = () => (
   <div className="page__sidebar">
-    <button className="page__sidebar__button" type="button">
+    <NavLink className="page__sidebar__button" to="/">
       <SvgArrowIcon2 />
-    </button>
+    </NavLink>
 
     <Products
       title="Introduction to Heels Dance"
@@ -31,12 +32,12 @@ const PageSidebar: React.FC = () => (
           title: "Balances & Lines",
           text: "Now we start our REAL high heels journey and of course",
         },
-				{
+        {
           id: "126",
           imageSrc: "images/product_img.jpg",
           title: "Slow Walk & Balance Combo",
           text: "Ok, here are some main points from this video...",
-        }
+        },
       ]}
     />
   </div>

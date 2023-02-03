@@ -2,11 +2,8 @@ import React from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 
 import { Info, Intro, Learning, Products, Video } from "~/components";
-<<<<<<< HEAD
-=======
 import { PageSidebar } from "./PageSidebar";
 import { PageContent } from "./PageContent";
->>>>>>> c21e498e0a18a9ffc497e790cb2499a1535cdbdd
 import "./style.scss";
 import { Copyright } from "./Copyright";
 
@@ -23,8 +20,6 @@ const Layout: React.FC = () => (
         </li>
       </ul>
     </div>
-<<<<<<< HEAD
-=======
 
     <Routes>
       <Route
@@ -84,7 +79,6 @@ const Layout: React.FC = () => (
         path="/content"
       />
     </Routes>
->>>>>>> c21e498e0a18a9ffc497e790cb2499a1535cdbdd
   </>
 );
 

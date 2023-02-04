@@ -5,7 +5,7 @@
     "react-router-dom": "^6.4.3",
     "uuid": "^9.0.0"
   },
-  "description": "Course A",
+  "description": "Dancing Course - React + TS + Syled",
   "devDependencies": {
     "@types/eslint": "^8.4.10",
     "@types/node": "^18.11.9",
@@ -28,7 +28,7 @@
     "typescript": "4.8.4"
   },
   "license": "UNLICENSED",
-  "name": "course",
+  "name": "dancing-course",
   "scripts": {
     "build": "cross-env MODE=production ts-node ./esbuild-config.ts",
     "develop": "cross-env MODE=development ts-node ./esbuild-config.ts"
